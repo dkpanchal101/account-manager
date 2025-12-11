@@ -1,16 +1,46 @@
-# React + Vite
+# Account Manager (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, professional single-page app for the React internship practical. Users can register, log in, and manage profile details—no backend required.
 
-Currently, two official plugins are available:
+## Features
+- Registration form with validation (name, email, password length).
+- Login form with sample credentials shown in the UI.
+- Profile editing: name, email, phone, role, company, status, bio.
+- Profile completion indicator.
+- All state handled client-side.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sections (single page)
+- Hero: intro + buttons to jump to Register or Login.
+- Registration card: create an account.
+- Login card: sign in with registered or sample credentials.
+- Profile card: update account details and status.
 
-## React Compiler
+## Getting Started
+```bash
+npm install
+npm run dev
+# open the shown localhost URL (typically http://localhost:5173)
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Usage Flow
+1) Register a new account (name, email, password required).
+2) Log in using the new credentials (or the sample ones displayed).
+3) Update profile fields and save.
 
-## Expanding the ESLint configuration
+## Sample Credentials
+- Email: avery@northwind.studio
+- Password: Design#24
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- React 19, Vite
+- Plain CSS (no external UI library)
+
+## Structure
+- `src/App.jsx` – app state and layout
+- `src/components/` – Hero, RegistrationCard, LoginCard, ProfileCard, CardShell
+- `src/App.css` – component styles
+- `src/index.css` – global styles
+
+## Notes
+- Everything runs locally; data is in-memory only.
+- Keep code simple and readable per the practical guidelines.
